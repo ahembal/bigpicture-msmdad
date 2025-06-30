@@ -1,0 +1,45 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!--
+    [Entity Name] (e.g., 5.4.XX Custom Entity)
+    This XML file defines the mandatory attributes for the [Entity Name] CMMS Entity.
+    Fill in each <ATTRIBUTE> as required for your new entity.
+    Please follow the attribute structure for documentation, data types, and context.
+-->
+<Entity id="5.4.XX" name="[Entity Name]">
+    <Number>5.4.XX</Number>
+    <Name>[Entity Name]</Name>
+    <Attributes>
+
+        <!-- Attribute [Descriptive Name] ([Attribute ID]) -->
+        <ATTRIBUTE>
+            <Attribute_ID>[Attribute ID]</Attribute_ID>
+            <Name>[Attribute Name]</Name>
+            <Inclusion_Status_Context>[general [Everyone] / specific [Clinical/Non-Clinical] / ...]</Inclusion_Status_Context>
+            <Machine_Readable_Field_Name>[machine_readable_name]</Machine_Readable_Field_Name>
+            <Class>[Housekeeping/Biological/Technical/Legal/Ethical]</Class>
+            <CMMS_Entity>[Entity Name]</CMMS_Entity>
+            <Parent_Attribute>[Parent Attribute or -]</Parent_Attribute>
+            <Description>[Short description of the attribute.]</Description>
+            <Explanation>[Further explanation or '-']</Explanation>
+            <METAFLEX>[StringAttributeType/CodeAttributeType/SetAttributeType/NumericAttributeType/ReferenceType/ObjectType/MeasurementAttributeType/etc.]</METAFLEX>
+            <Value_Specification>
+                <NA>[allowed/not allowed]</NA>
+                <NA_Value>[not applicable/'nil'/other]</NA_Value>
+                <Data_Type>[STRING/INT/FLOAT/CODE ATTRIBUTE/SET ATTRIBUTE/U-INT/ATTRIBUTE SET/etc.]</Data_Type>
+                <Unit>[unit or 'not applicable']</Unit>
+                <Comment>
+                    [Controlled vocabulary, schema references, or other comments.]
+                </Comment>
+            </Value_Specification>
+            <DICOM_Specification>
+                <NA_Value>[not applicable/NA not allowed/etc.]</NA_Value>
+                <Comment>[not applicable/other comments]</Comment>
+                <Change_Log>
+                    MSMdad v.X.X.X: [summary of changes]
+                </Change_Log>
+            </DICOM_Specification>
+        </ATTRIBUTE>
+        <!-- Repeat the <ATTRIBUTE> block for each attribute of your entity. -->
+
+    </Attributes>
+</Entity>
