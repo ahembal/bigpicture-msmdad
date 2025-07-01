@@ -50,6 +50,21 @@ The CMMS comprises 16 entities, each described below:
 - Include all attributes specified as mandatory for your submission context (clinical, non-clinical, or everyone).
 - For schema and metadata standard details, see the full Bigpicture metadata standard (contact the authors for access if needed).
 
+---
+
+## Entity XML Schema Template
+
+A generic template file, `entity_schema.xml`, is included in this repository.  
+**If you want to create a new CMMS Entity XML file, or add new attributes to an entity, please use this template as your starting point.**  
+The template provides the recommended structure, documentation comments, and attribute format to ensure consistency across all entity XML files in this repository.
+
+- **Location:** `src/entity_schema.xml`
+- **How to use:** Copy the template and fill in your new entity/attribute details according to the guidance in the comments.
+
+*Following the schema helps maintain quality, traceability, and reusability of the metadata standard files.*
+
+---
+
 ## License
 
 Apache 2.0
