@@ -168,6 +168,47 @@
                 </Change_Log>
             </DICOM_Specification>
         </ATTRIBUTE>
+        <!-- Specimen Type (3.2.2) -->
+        <ATTRIBUTE>
+            <Attribute_ID>3.2.2</Attribute_ID>
+            <Name>Specimen Type</Name>
+            <Inclusion_Status_Context>general [Everyone]</Inclusion_Status_Context>
+            <Machine_Readable_Field_Name>specimen_type</Machine_Readable_Field_Name>
+            <Class>Technical</Class>
+            <CMMS_Entity>Specimen</CMMS_Entity>
+            <Parent_Attribute>-</Parent_Attribute>
+            <Description>The type of the specimen (e.g. histology, cytology etc.).</Description>
+            <Explanation>-</Explanation>
+            <METAFLEX>CodeAttributeType</METAFLEX>
+            <Value_Specification>
+                <NA>allowed</NA>
+                <NA_Value>'nil'</NA_Value>
+                <Data_Type>CODE ATTRIBUTE</Data_Type>
+                <Unit>not applicable</Unit>
+                <Comment>
+                    Schema:
+                    • SNOMED CT ‘Body substance specimen (specimen)’
+                    
+                    RECOMMENDED LIST:
+                    • 119376003 | Tissue specimen (specimen)
+                    • 764445001 | Cytologic Material (substance)
+                    • 371783005 | Human tissue for identification (specimen)
+                    • 309051001 | Body fluid specimen (specimen)
+                    • 432825001 | Body secretion specimen (specimen)
+                </Comment>
+            </Value_Specification>
+            <DICOM_Specification>
+                <NA_Value>not applicable</NA_Value>
+                <Comment>not applicable</Comment>
+                <Change_Log>
+                    MSMdad v.0.1.0: -
+                    MSMdad v.0.1.1: -
+                    MSMdad v.0.1.2: value specification, MetaFleX Type
+                    MSMdad v.1.0.0: none
+                    MSMdad v.2.0.0: none
+                </Change_Log>
+            </DICOM_Specification>
+        </ATTRIBUTE>
         <!-- Fixation Type (3.2.3) -->
         <ATTRIBUTE>
             <Attribute_ID>3.2.3</Attribute_ID>
@@ -352,7 +393,7 @@
             <METAFLEX>CodeAttributeType</METAFLEX>
             <Value_Specification>
                 <NA>Allowed for clinical; not allowed for non-clinical</NA>
-                <NA_Value>'nil’</NA_Value>
+                <NA_Value>'nil'</NA_Value>
                 <Data_Type>CODE ATTRIBUTE</Data_Type>
                 <Unit>not applicable</Unit>
                 <Comment>
@@ -394,7 +435,7 @@
             <METAFLEX>SetAttributeType</METAFLEX>
             <Value_Specification>
                 <NA>allowed</NA>
-                <NA_Value>'nil’</NA_Value>
+                <NA_Value>'nil'</NA_Value>
                 <Data_Type>SET ATTRIBUTE</Data_Type>
                 <Unit>not applicable</Unit>
                 <Comment>-</Comment>
